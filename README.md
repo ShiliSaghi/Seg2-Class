@@ -30,10 +30,10 @@ You can include SEG2-Class in your project by either:
 
 
 
-# Manual Installation: 
+### Manual Installation: 
 Download the source code from this repository and include it in your project.
 
-# Usage
+### Usage
 1. Import the SEG2-Class library in your C# code:
    using SEG2;
 2. Initialize a SEG2 parser:
