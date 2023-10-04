@@ -28,7 +28,7 @@ You can include SEG2-Class in your project by either:
    ```shell
    Install-Package SEG2-Class
 
-### Manual Installation: 
+### Manual Installation
 Download the source code from this repository and include it in your project.
 
 ### Usage
@@ -50,5 +50,5 @@ Download the source code from this repository and include it in your project.
        // ...
    }
 
-## Contributions:
+## Contributions
 Please feel free to submit a pull request if you have ideas for improvements, bug fixes, or new features. 
