@@ -41,7 +41,8 @@ Download the source code from this repository and include it in your project.
 3. Parse a SEG2 file:
    SEG2File seg2File = parser.Parse("your_file.seg2");
 4. Access seismic data and headers:
-   foreach (SEGYTrace trace in seg2File.Traces)
+```shell
+foreach (SEGYTrace trace in seg2File.Traces)
 {
     // Access trace data
     double[] data = trace.Data;
