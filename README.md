@@ -28,8 +28,6 @@ You can include SEG2-Class in your project by either:
    ```shell
    Install-Package SEG2-Class
 
-
-
 ### Manual Installation: 
 Download the source code from this repository and include it in your project.
 
@@ -41,16 +39,16 @@ Download the source code from this repository and include it in your project.
 3. Parse a SEG2 file:
    SEG2File seg2File = parser.Parse("your_file.seg2");
 4. Access seismic data and headers:
-```shell
-foreach (SEGYTrace trace in seg2File.Traces)
-{
-    // Access trace data
-    double[] data = trace.Data;
+   ```shell
+   foreach (SEGYTrace trace in seg2File.Traces)
+   {
+       // Access trace data
+       double[] data = trace.Data;
     
-    // Access trace header values
-    string traceID = trace.TraceHeader.TraceIdentifier;
-    // ...
-}
+       // Access trace header values
+       string traceID = trace.TraceHeader.TraceIdentifier;
+       // ...
+   }
 
-## Contributions
+## Contributions:
 Please feel free to submit a pull request if you have ideas for improvements, bug fixes, or new features. 
