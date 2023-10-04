@@ -27,7 +27,7 @@ You can include SEG2-Class in your project by either:
 
    ```shell
    Install-Package SEG2-Class
-
+   
 ### Manual Installation
 Download the source code from this repository and include it in your project.
 
@@ -49,6 +49,6 @@ Download the source code from this repository and include it in your project.
        string traceID = trace.TraceHeader.TraceIdentifier;
        // ...
    }
-
+   
 ## Contributions
 Please feel free to submit a pull request if you have ideas for improvements, bug fixes, or new features. 
