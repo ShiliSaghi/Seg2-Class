@@ -4,21 +4,19 @@
 This repository contains an implementation of the SEG2 file format in C#. SEG2 (Seismic Exchange Format, Revision 2) is a widely used data format in geophysics projects for the storage and analysis of seismic data. This class is designed to store geophysical signals in the SEG2 file format, which is commonly used for analyzing geophysical data in various applications such as Downhole 2016, Windownhole, Pickwin, and more.
 
 ## Features
-   This class stores four input signals in SEG2 format and you can add or remove signals according to your needs.
+   This class stores three input signals in SEG2 format and you can add or remove signals according to your needs.
    ### Required parameters for creating a SEG2 file
    - **sample_Interval**: The time interval between samples in the trace.
    - **pre_Trigger**: It determines how long data is recorded before the trigger event, typically in milliseconds or seconds.
    - **record_Length**: The total time of capturing data, typically in milliseconds or seconds
-   - **chi_Hardware_Gain**: The amount of gain type applied to each channel of signals(in our case from channel1 to channel4), i is the index of channels(variables from 1 to 4)
+   - **chi_Hardware_Gain**: The amount of gain type applied to each channel of signals(in our case from channel1 to channel3), i is the index of channels(variables from 1 to 3)
        
 
   ### Methods
-   - **PrepareSeg2Format**: This implementation provides a robust parser for reading SEG2 files, making it easy to extract valuable seismic data.
-    
-   - **SaveSeg2File**: You can easily extract seismic traces, headers, and other essential information from SEG2 files, enabling you to perform in-depth analysis.
-
-   - **ConvertToSeg2Line**: Our SEG2-Class is designed to work seamlessly with popular geophysics software and tools. It ensures compatibility with various applications that rely on SEG2 format data.
-   - - **writeBlock**:
+   - **PrepareSeg2Format**: This method generates a SEG2 file following the structure outlined in the "Recommended standard for seismic (/radar) data files in the personal computer environment1" paper, which includes header, trace headers, and seismic traces. It takes a specified path and geophysical signals as arguments. In my project, three channels of signals are used, including Sx, Sy, and P, but this can be extended based on your project requirements. 
+   - **SaveSeg2File**: Calling this function will create the final SEG2 file in the provided path.
+   - **ConvertToSeg2Line**: This method is used to convert a string line of parameters into a byte array when completing the SEG2 structure.
+   - **writeBlock**: This function is responsible for appending a byte array to the main arrays.
 
 ## Getting Started
 Download the source code from this repository and include it in your project.
